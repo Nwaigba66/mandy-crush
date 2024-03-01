@@ -16,7 +16,7 @@ restartBtn.addEventListener('click', startGame)
 
 
 let game = undefined
-let startTime = 11;
+let startTime = 31;
 let timerId = null
 
 mainSong.loop = true;
@@ -29,7 +29,7 @@ function startGame() {
   gameScreen.style.display = 'flex'
   gameContainer.style.display = 'block'
   moves = 0;
-  startTime = 11;
+  startTime = 51;
   timer.innerText = `${startTime}s`
   timerId = setInterval(updateTimer, 1000);
 }
@@ -77,7 +77,7 @@ function restartGame() {
   finishMessage.style.display = 'block';
   restartBtn.style.display = 'none';
   scoreDisplay.innerText = score;
-  startTime = 11;
+  startTime = 31;
   score = 0;
   moves = 0;
   timer.innerText = `${startTime}s`
