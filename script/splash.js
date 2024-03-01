@@ -29,7 +29,7 @@ function startGame() {
   gameScreen.style.display = 'flex'
   gameContainer.style.display = 'block'
   moves = 0;
-  startTime = 51;
+  startTime = 31;
   timer.innerText = `${startTime}s`
   timerId = setInterval(updateTimer, 1000);
 }
