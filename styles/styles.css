@@ -1,0 +1,95 @@
+#game-screen {
+    display: none;
+    height: 560px;
+    width: 560px;
+
+    flex-wrap: wrap;
+    margin:auto;
+    background-color: blueviolet;
+}
+
+#game-screen div {
+    height: 70px;
+    width: 70px;
+}
+  
+ 
+  /* Styles for splash screen */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url(../images/bg.jpeg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.splash-screen {
+  text-align: center;
+}
+
+#start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#start-button:hover {
+  background-color: #2980b9;
+}
+
+#restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: hsl(0, 69%, 48%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restart-button:hover {
+  background-color: hsl(0, 69%, 48%);
+}
+
+#return-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: hsl(148, 80%, 21%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#return-button:hover {
+  background-color: hsl(148, 80%, 21%);
+}
+
+
+.chat-box { 
+  background-color: rgb(244, 244, 245);
+  border-radius: 8px;
+  opacity: 0.8;
+  padding: .25rem .75rem;
+  margin: 1rem 0;
+}
+.btnGroup {
+  display: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnGroup p {
+  padding: 0 10px;
+}

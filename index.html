@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Crush</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div id="splash-screen" class="chat-box">
+    
+    <img src="./images/candy-png-31988.png" alt="" id="candy-img"/>
+    <h1>Welcome to Mandy's Crush</h1>
+    <button id="start-button">Start Game</button>
+    <h2>Rules of the Game</h2>
+    <p>You need to crush 100 candies to win the game within 100seconds.<br>You have to crush at least 3 matching candies.
+      <br>The maximum candies you can crush is 5 matching candies<br> and you get more scores doing that!!
+      <br>You can reset the game to play current level</p>
+  </div>
+  <br>
+  
+  
+    <!-- #game-screen is initially hidden using CSS style display: none -->
+    <div>
+      <div id="game-container" class="chat-box" style="display: none">
+        <div>
+          <h2>Moves</h2>
+          <p>Score: <span id="score">0</span></p>
+          <p>timer: <span id="timer">0</span></p>
+        </div>
+      </div>
+    <div id="game-screen"  style="display: none">
+    </div>
+  </div>
+  
+    
+
+  
+  <div id="game-end" class="chat-box" style="display: none">
+    <h1>Game Over</h1>
+    <p id="finish-game"></p>
+      <button id="restart-button" onclick="end()">Reset</button>
+      <div></div>
+      <button id="return-button" onclick="start()">Home</button> 
+  </div>
+
+
+    <script type="text/javascript" src="./script/game.js"></script>
+    <script type="text/javascript" src="./script/splash.js"></script>
+</body>
+</html>
+
